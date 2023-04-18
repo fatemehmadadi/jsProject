@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border-style: none;
+}
+
+:root {
+  --c-gray-dark:#333333;
+  --c-gray-light: #e0e0e0;
+  --c-purple-light: #8b39d8;
+  --c-blue-light: #48cccc;
+  --box-shadow: 0 1rem 1.5rem #4b4b4b52;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: var(--c-gray-dark);
+}
+.input-section,
+.radio-section {
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1.5rem;
+  margin: 8rem 0;
+  background-color: var(--c-gray-light);
+  box-shadow: var(--box-shadow);
+}
+
+.input-section h1,
+.radio-section h1 {
+  color: var(--c-purple-light);
+}
+.input-section p {
+  width: 40rem;
+  min-height: 3rem;
+  text-align: justify;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid var(--c-blue-light);
+  padding: 0.6rem 2rem;
+}
+.input-section input {
+  width: 40rem;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  border-radius: 5px;
+  padding: 0.6rem 2rem;
+  color: inherit;
+}
+
+.radio-section .radio-box {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.radio-box div {
+  display: flex;
+  align-items: center;
+}
+.radio-box input[type="radio"] {
+  width: 2rem;
+  height: 2em;
+  margin-left: 0.5rem;
+}
+.radio-box input[type="radio"]:not(:last-child) {
+  margin-right: 2rem;
+}
